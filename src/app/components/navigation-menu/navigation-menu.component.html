@@ -1,0 +1,17 @@
+<div class="open" appToggleNavMenu customClassName="isOpen">
+  <span class="cls"></span>
+  <span>
+    <ul class="sub-menu">
+      <li *ngFor="let navItems of navMenuItems">
+        <a
+          [routerLink]="navItems.link"
+          [attr.title]="navItems.title"
+          [routerLinkActive]="'active'"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >{{ navItems.title }}</a
+        >
+      </li>
+    </ul>
+  </span>
+  <span class="cls"></span>
+</div>

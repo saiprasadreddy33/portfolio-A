@@ -1,0 +1,13 @@
+<div class="header">
+  <app-lang-dropdown></app-lang-dropdown>
+  <app-navigation-menu></app-navigation-menu>
+  <main>
+    <div class="inner-header">
+      <app-spinner *ngIf="loading; else showContentTemplate"></app-spinner>
+      <ng-template #showContentTemplate>
+        <router-outlet></router-outlet>
+      </ng-template>
+    </div>
+  </main>
+  <app-footer></app-footer>
+</div>

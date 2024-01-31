@@ -1,0 +1,26 @@
+.inner-header {
+  min-height: 85vh;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.header {
+  position: relative;
+  text-align: center;
+  background: linear-gradient(
+    90deg,
+    rgba(84, 58, 183, 1) 0%,
+    rgba(0, 172, 193, 1) 100%
+  );
+  // background: linear-gradient(55deg, #4e75b9 30%, #5cbf98 90%);
+  color: white;
+}

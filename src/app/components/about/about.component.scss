@@ -1,0 +1,40 @@
+.about-me-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .about-me-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1 0 0%;
+    h1 {
+      padding-top: 5rem;
+      font-size: 4rem;
+    }
+    .about-me {
+      p {
+        padding: 1rem 5rem;
+        font-size: 1rem;
+        text-align: left;
+      }
+
+      p a {
+        color: #08fdd8;
+        text-decoration: none;
+      }
+
+      a:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+  .tag-canvas {
+    flex: 1 0 0%;
+  }
+}
+
+::ng-deep tag-canvas canvas {
+  padding-top: 20px;
+  min-height: 70vh;
+}

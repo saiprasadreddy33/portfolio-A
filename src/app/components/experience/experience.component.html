@@ -1,0 +1,14 @@
+<section class="timeline">
+  <ul>
+    <li *ngFor="let e of experience" appTimeline customClassName="in-view">
+      <div>
+        <time>{{ e.yearRange }}</time>
+        <div class="discovery">
+          <h1>{{ e.company }}</h1>
+          <p>{{ e.designation }}</p>
+          <span>{{ e.role }}</span>
+        </div>
+      </div>
+    </li>
+  </ul>
+</section>
